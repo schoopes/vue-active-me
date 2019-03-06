@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <h1>Events in Your Area</h1>
+      <p>{{ events }}</p>
+   <!--    <div v-for="event in events">
+        <p>{{ event }}</p>
+        <button v-on:click="favoriteEvent()">Add to Favorites</button>
+      </div> -->
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+var axios = require("axios");
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  data: function() {
+    return {
+      events: []
+    };
+  },
+  created: function() {
+    axios.get("/api/eventful").then(response => {
+      this.events = response.data;
+    });
+  },
+  methods: {
+    favoriteEvent: function() {
+      axios.post("/api/favorites").then(response => {
+        console.log(response.data);
+      });
+    }
   }
-}
+};
 </script>

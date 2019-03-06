@@ -2,7 +2,14 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span v-if="isLoggedIn()">
+        <router-link to="/logout">Logout</router-link> |
+        <router-link to="/profile">Profile</router-link>
+      </span>
+      <span v-else>
+        <router-link to="/login">Login</router-link> |
+        <router-link to="/signup">Sign Up</router-link>
+      </span>
     </div>
     <router-view/>
   </div>
@@ -10,7 +17,7 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -29,3 +36,20 @@
   color: #42b983;
 }
 </style>
+
+<script>
+var axios = require("axios");
+
+export default {
+  data: function() {
+    return {
+      user: {}
+    };
+  },
+  methods: {
+    isLoggedIn: function() {
+      return localStorage.getItem("jwt");
+    }
+  }
+};
+</script>
