@@ -1,12 +1,17 @@
 <template>
   <div class="home">
     <div class="container">
-      <h1>Events in Your Area</h1>
-      <p>{{ events }}</p>
-   <!--    <div v-for="event in events">
-        <p>{{ event }}</p>
+      <h1>Events in {{ user.location }}</h1>
+      <div v-for="event in events">
+        <br>
+        <h3>{{ event.event }}</h3>
+        <h4>{{ event.city }}</h4>
+        <p>{{ event.venue }}</p>
+        <p>{{ event.address }}</p>
+        <p>{{ event.when }}</p>
+        <p>{{ event.description }}</p>
         <button v-on:click="favoriteEvent()">Add to Favorites</button>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -17,12 +22,16 @@ var axios = require("axios");
 export default {
   data: function() {
     return {
-      events: []
+      events: [],
+      user: []
     };
   },
   created: function() {
     axios.get("/api/eventful").then(response => {
       this.events = response.data;
+    });
+    axios.get("/api/users/me").then(response => {
+      this.user = response.data;
     });
   },
   methods: {
