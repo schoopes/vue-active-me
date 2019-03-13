@@ -10,7 +10,7 @@
         <p>{{ event.address }}</p>
         <p>{{ event.when }}</p>
         <p>{{ event.description }}</p>
-        <button v-on:click="favoriteEvent()">Add to Favorites</button>
+        <button v-on:click="favoriteEvent(event.id)">Add to Favorites</button>
       </div>
     </div>
   </div>
@@ -35,8 +35,8 @@ export default {
     });
   },
   methods: {
-    favoriteEvent: function() {
-      axios.post("/api/favorites").then(response => {
+    favoriteEvent: function(eventfulId) {
+      axios.post("/api/favorites", { eventful_id: eventfulId, user_id: this.user.id }).then(response => {
         console.log(response.data);
       });
     }

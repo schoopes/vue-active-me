@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <span v-if="isLoggedIn()">
         <router-link to="/logout">Logout</router-link> |
-        <router-link to="/profile">Profile</router-link>
+        <router-link to="/profile">Profile</router-link> |
+        <router-link to="/calendar">Calendar</router-link>
       </span>
       <span v-else>
         <router-link to="/login">Login</router-link> |

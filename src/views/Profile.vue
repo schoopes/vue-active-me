@@ -4,21 +4,37 @@
       <h1>{{ user.first_name }}'s Profile</h1>
       <p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
       <p>Email: {{ user.email }}</p>
-      <p>City: {{ user.location }}</p><br>
-      <h2>My Events</h2>
-      <div v-for="favorite in favorites">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Event: {{ favorite.event }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">City: {{ favorite.city }}</h6>
-            <p class="card-text">Venue: {{ favorite.venue }}</p>
-            <p class="card-text">When: {{ calendarTime(favorite.when) }}</p>
+      <p>City: {{ user.location }}</p>
+      <router-link to="/calendar">View Calendar</router-link>
+      <br>
+      <br><h2>My Events</h2>
+      <transition name="fade">
+        <div v-if="showFavorite" v-for="favorite in favorites">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Event: {{ favorite.event }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">City: {{ favorite.city }}</h6>
+              <p class="card-text">Venue: {{ favorite.venue }}</p>
+              <p class="card-text">When: {{ calendarTime(favorite.when) }}</p>
+              <button v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button>
+            </div>
           </div>
         </div>
-      </div>
+      </transition> 
     </div>
   </div>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
 
 <script>
 var axios = require("axios");
@@ -29,7 +45,8 @@ export default {
     return {
       user: [],
       favorites: [],
-      userId: ""
+      userId: "",
+      showFavorite: true
     };
   },
   created: function() {
@@ -44,6 +61,12 @@ export default {
   methods: {
     calendarTime: function(date) {
       return moment(date).format("MMMM Do YYYY @ h:mm: a");
+    },
+    destroyFavorite(eventfulId) {
+      axios.delete("/api/favorites/" + eventfulId).then(response => {
+        console.log(response.data);
+        this.$router.push("/profile");
+      });
     }
   }
 };
