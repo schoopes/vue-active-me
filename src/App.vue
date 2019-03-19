@@ -12,7 +12,9 @@
         <router-link to="/signup">Sign Up</router-link>
       </span>
     </div>
-    <router-view/>
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 

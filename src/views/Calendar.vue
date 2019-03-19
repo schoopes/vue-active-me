@@ -1,76 +1,53 @@
 <template>
-  <div id="calendar">
-    <div class="container">
-      <button v-on:click="previous()">Previous</button><button v-on:click="next()">Next</button>
-      <h2>{{ currentMonth + " " + currentYear }}</h2>
-      <table class="table table-bordered">
-        <thead>
-          <tr class="table-success">
-            <th>Su</th>
-            <th>M</th>
-            <th>T</th>
-            <th>W</th>
-            <th>Th</th>
-            <th>F</th>
-            <th>Sa</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td v-if="startOfMonth == 'Sunday'">1</td>
-            <td v-else></td>
-            <td v-if="startOfMonth == 'Monday'">1</td>
-            <td v-else></td>
-            <td v-if="startOfMonth == 'Tuesday'">1</td>
-            <td v-else></td>
-            <td v-if="startOfMonth == 'Wednesday'">1</td>
-            <td v-else></td>
-            <td v-if="startOfMonth == 'Thursday'">1</td>
-            <td v-else></td>
-            <td v-if="startOfMonth == 'Friday'">1</td>
-            <td v-else></td>
-           <td v-if="startOfMonth == 'Saturday'">1</td>
-           <td v-else></td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="calendar">
+    <div v-if="$root.googleEvents" id="calendar">
     </div>
+    <button v-else v-on:click="googleAuth()">
+      Sign in With Google
+    </button>
   </div>
 </template>
 
 <style>
+#calendar {
+  width: 100%;
+}
 </style>
 
 <script>
-import moment from "moment";
+import axios from "axios";
+import { Calendar } from "@fullcalendar/core";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import "@fullcalendar/core/main.css";
+import "@fullcalendar/daygrid/main.css";
 
 export default {
   data() {
     return {
-      today: moment(),
-      startOfMonth: moment()
-        .startOf("month")
-        .format("dddd"),
-      endOfMonth: moment()
-        .endOf("month")
-        .format("dddd"),
-      date: 1,
-      months: [],
-      years: [],
-      currentYear: moment().format("YYYY"),
-      currentMonth: moment().format("MMMM")
+      googleEvents: "",
+      favorites: []
     };
   },
+  created: function() {
+    axios.get("/api/favorites").then(response => {
+      console.log(response.data);
+      this.favorites = response.data;
+    });
+  },
+  mounted: function() {
+    console.log(this.$root.googleEvents);
+    var calendarEl = document.getElementById("calendar");
+
+    var calendar = new Calendar(calendarEl, {
+      plugins: [dayGridPlugin]
+    });
+
+    calendar.render();
+  },
   methods: {
-    previous: function() {
-      this.currentMonth = moment()
-        .subtract(1, "month")
-        .format("MMMM");
-    },
-    next: function() {
-      this.currentMonth = moment()
-        .add(1, "month")
-        .format("MMMM");
+    googleAuth: function() {
+      window.location.href =
+        "https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/calendar&redirect_uri=http://localhost:8080/google/callback&response_type=code&client_id=172210505146-cglcauiuv08b1rae1pe7a4o4psobdgr6.apps.googleusercontent.com";
     }
   }
 };

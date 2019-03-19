@@ -6,6 +6,7 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import Profile from "./views/Profile.vue";
 import Calendar from "./views/Calendar.vue";
+import Callback from "./Callback.vue";
 
 Vue.use(Router);
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/calendar',
       name: 'calendar',
       component: Calendar
+    },
+    {
+      path: '/google/callback',
+      name: 'callback',
+      component: Callback
     }
   ]
 });
