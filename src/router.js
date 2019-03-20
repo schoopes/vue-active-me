@@ -6,7 +6,7 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import Profile from "./views/Profile.vue";
 import Calendar from "./views/Calendar.vue";
-import Callback from "./Callback.vue";
+import Callback from "./views/Callback.vue";
 
 Vue.use(Router);
 

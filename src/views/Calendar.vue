@@ -24,8 +24,9 @@ import "@fullcalendar/daygrid/main.css";
 export default {
   data() {
     return {
-      googleEvents: "",
-      favorites: []
+      favorites: [],
+      calendarEvents: [],
+      eachEvent: this.$root.googleEvents.items
     };
   },
   created: function() {
@@ -37,11 +38,13 @@ export default {
   mounted: function() {
     console.log(this.$root.googleEvents);
     var calendarEl = document.getElementById("calendar");
-
+    this.eachEvent.forEach(function(event) {
+      this.calendarEvents.push({ title: event.summary, start: event.start.dateTime });
+    }, this);
     var calendar = new Calendar(calendarEl, {
-      plugins: [dayGridPlugin]
+      plugins: [dayGridPlugin],
+      events: this.calendarEvents
     });
-
     calendar.render();
   },
   methods: {
