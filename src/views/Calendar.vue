@@ -26,26 +26,26 @@ export default {
     return {
       favorites: [],
       calendarEvents: [],
-      eachEvent: this.$root.googleEvents.items
+      eventItem: this.$root.googleEvents.items
     };
   },
-  created: function() {
-    axios.get("/api/favorites").then(response => {
-      console.log(response.data);
-      this.favorites = response.data;
-    });
-  },
   mounted: function() {
-    console.log(this.$root.googleEvents);
-    var calendarEl = document.getElementById("calendar");
-    this.eachEvent.forEach(function(event) {
-      this.calendarEvents.push({ title: event.summary, start: event.start.dateTime });
-    }, this);
-    var calendar = new Calendar(calendarEl, {
-      plugins: [dayGridPlugin],
-      events: this.calendarEvents
+    axios.get("/api/favorites").then(response => {
+      this.favorites = response.data;
+      console.log(this.favorites);
+      var calendarEl = document.getElementById("calendar");
+      this.favorites.forEach(function(favorite) {
+        this.calendarEvents.push({ title: favorite.event, start: favorite.start, color: "red", textColor: "black" });
+      }, this);
+      this.eventItem.forEach(function(event) {
+        this.calendarEvents.push({ title: event.summary, start: event.start.dateTime });
+      }, this);
+      var calendar = new Calendar(calendarEl, {
+        plugins: [dayGridPlugin],
+        events: this.calendarEvents
+      });
+      calendar.render();
     });
-    calendar.render();
   },
   methods: {
     googleAuth: function() {
