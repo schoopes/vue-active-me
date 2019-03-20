@@ -5,21 +5,22 @@
       <p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
       <p>Email: {{ user.email }}</p>
       <p>City: {{ user.location }}</p>
+      <router-link to="/edit">Edit User Information</router-link><br>
       <router-link to="/calendar">View Calendar</router-link>
       <br>
       <br><h2>My Events</h2>
       <transition-group name="fade">
-        <div v-if="showFavorite" v-for="favorite in favorites" v-bind:key="favorite.id">
+        <div v-if="showFavorite" v-for="favorite in favorites" v-bind:key="favorite.id" >
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Event: {{ favorite.event }}</h5>
               <h6 class="card-subtitle mb-2 text-muted">City: {{ favorite.city }}</h6>
               <p class="card-text">Venue: {{ favorite.venue }}</p>
               <p class="card-text">When: {{ calendarTime(favorite.start) }}</p>
-              <button v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button>
-            <!--   <br><p class="card-subtitle mb-2 text-muted">{{ getAttendees(favorite.id) }}{{ attendees - 1 }} other person(s) have favorited this event.</p> -->
+              <button v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button><br>
+     <!--          <br><p class="card-subtitle mb-2 text-muted">{{ getAttendees(favorite.id) }} other person(s) have favorited this event.</p> -->
             </div>
-          </div>
+          </div><br>
         </div>
       </transition-group>
     </div>
@@ -48,7 +49,7 @@ export default {
       favorites: [],
       userId: "",
       showFavorite: true,
-      attendees: ""
+      attendees: []
     };
   },
   created: function() {
@@ -60,6 +61,14 @@ export default {
       this.user = response.data;
     });
   },
+  // computed: {
+  //   getAttendees(eventfulId) {
+  //     axios.get("/api/favorites/" + eventfulId).then(response => {
+  //       console.log(response.data);
+  //       return response.data;
+  //     });
+  //   }
+  // },
   methods: {
     calendarTime: function(date) {
       return moment(date).format("MMMM Do YYYY @ h:mm: a");
@@ -69,12 +78,13 @@ export default {
         console.log(response.data);
         this.$router.push("/profile");
       });
-    },
-    getAttendees(eventfulId) {
-      axios.get("/api/favorites/" + eventfulId).then(response => {
-        this.attendees = response.data.attendees;
-      });
     }
+    // getAttendees(eventfulId) {
+    //   return axios.get("/api/favorites/" + eventfulId).then(response => {
+    //     this.attendees.push(response.data.attendees);
+    //     console.log(this.attendees);
+    //   });
+    // }
   }
 };
 </script>

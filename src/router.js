@@ -7,6 +7,7 @@ import Logout from "./views/Logout.vue";
 import Profile from "./views/Profile.vue";
 import Calendar from "./views/Calendar.vue";
 import Callback from "./views/Callback.vue";
+import Edit from "./views/Edit.vue";
 
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/google/callback',
       name: 'callback',
       component: Callback
+    },
+    {
+      path: '/edit',
+      name: 'user-edit',
+      component: Edit
     }
   ]
 });

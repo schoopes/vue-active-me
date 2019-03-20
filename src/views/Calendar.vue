@@ -33,17 +33,22 @@ export default {
     axios.get("/api/favorites").then(response => {
       this.favorites = response.data;
       console.log(this.favorites);
+
       var calendarEl = document.getElementById("calendar");
+
       this.favorites.forEach(function(favorite) {
         this.calendarEvents.push({ title: favorite.event, start: favorite.start, color: "red", textColor: "black" });
       }, this);
+
       this.eventItem.forEach(function(event) {
         this.calendarEvents.push({ title: event.summary, start: event.start.dateTime });
       }, this);
+
       var calendar = new Calendar(calendarEl, {
         plugins: [dayGridPlugin],
         events: this.calendarEvents
       });
+
       calendar.render();
     });
   },
