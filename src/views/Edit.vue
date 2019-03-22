@@ -21,7 +21,6 @@
           Change Password
         </button><br>
         <div v-if="updatePassword">
-<!--           <br><input type="password" class="form-control" v-model="passwordConfirmation" placeholder="Enter Current Password"> -->
           <br><input type="password" class="form-control" v-model="password" placeholder="Enter New Password">
         </div><br>
         <div>
@@ -105,7 +104,7 @@ export default {
     destroyUser: function() {
       axios.delete("api/users/" + this.user.id).then(response => {
         console.log(response.data);
-        this.$router.push("/");
+        this.$router.push("/logout");
       });
     }
   }

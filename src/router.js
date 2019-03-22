@@ -8,6 +8,8 @@ import Profile from "./views/Profile.vue";
 import Calendar from "./views/Calendar.vue";
 import Callback from "./views/Callback.vue";
 import Edit from "./views/Edit.vue";
+import Sendgrid from "./views/Sendgrid.vue";
+import SendgridConfirmation from "./views/SendgridConfirmation.vue";
 
 Vue.use(Router);
 
@@ -54,6 +56,16 @@ export default new Router({
       path: '/edit',
       name: 'user-edit',
       component: Edit
+    },
+    {
+      path: '/sendgrid',
+      name: 'sendgrid',
+      component: Sendgrid
+    },
+    {
+      path: '/sendgrid/confirmation',
+      name: 'sendgrid-confirmation',
+      component: SendgridConfirmation
     }
   ]
 });
