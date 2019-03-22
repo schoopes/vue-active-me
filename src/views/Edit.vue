@@ -26,8 +26,32 @@
         </div><br>
         <div>
           <input type="submit" class="btn btn-success" value="Update Information">
-        </div>
+        </div><br>
       </form>
+      <button type="button" class=" btn btn-danger" data-toggle="modal" data-target="#destroyModal">
+        Delete Account Permanently
+      </button>
+     <!--  Are You Sure Modal -->
+      <div class="modal fade" id="destroyModal" tabindex="-1" role="dialog" aria-labelledby="destroyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="destroyModalLabel">Delete Account Permanently</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Are You Sure?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" v-on:click="destroyUser()">Yes, Delete Account</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -77,6 +101,12 @@ export default {
         .catch(error => {
           this.errors = error.response.data;
         });
+    },
+    destroyUser: function() {
+      axios.delete("api/users/" + this.user.id).then(response => {
+        console.log(response.data);
+        this.$router.push("/");
+      });
     }
   }
 };
