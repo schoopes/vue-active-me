@@ -6,19 +6,23 @@
       </ul>
       <form v-on:submit.prevent="submit()">
         <div>
-          First Name: <input type="text" class="form-control" v-model="user.first_name">
+          First Name: <input type="text" class="form-control" v-model="firstName">
         </div>
         <div>
-          Last Name: <input type="text" class="form-control" v-model="user.last_name">
+          Last Name: <input type="text" class="form-control" v-model="lastName">
         </div>
         <div>
-          Email: <input type="text" class="form-control" v-model="user.email">
+          Email: <input type="email" class="form-control" v-model="email">
         </div>
         <div>
-          City: <input type="text" class="form-control" v-model="user.location">
-        </div>
-        <div>
-          Password: <input type="text" class="form-control">
+          City: <input type="text" class="form-control" v-model="location">
+        </div><br>
+        <button type="button" v-on:click="updatePassword = !updatePassword">
+          Change Password
+        </button><br>
+        <div v-if="updatePassword">
+<!--           <br><input type="password" class="form-control" v-model="passwordConfirmation" placeholder="Enter Current Password"> -->
+          <br><input type="password" class="form-control" v-model="password" placeholder="Enter New Password">
         </div><br>
         <div>
           <input type="submit" class="btn btn-success" value="Update Information">
@@ -34,24 +38,35 @@ import axios from "axios";
 export default {
   data: function() {
     return {
+      errors: [],
       user: {},
-      errors: []
+      firstName: "",
+      lastName: "",
+      email: "",
+      location: "",
+      passwordConfirmation: "",
+      password: "",
+      updatePassword: false
     };
   },
   created: function() {
     axios.get("/api/users/me").then(response => {
       console.log(response.data);
       this.user = response.data;
+      this.firstName = response.data.first_name;
+      this.lastName = response.data.last_name;
+      this.email = response.data.email;
+      this.location = response.data.location;
     });
   },
   methods: {
     submit: function() {
       var userParams = {
-        first_name: this.user.first_name,
-        last_name: this.user.last_name,
-        email: this.user.email,
-        location: this.user.location,
-        password: this.user.password
+        first_name: this.firstName,
+        last_name: this.lastName,
+        email: this.email,
+        location: this.location,
+        password: this.password
       };
       axios
         .patch("api/users/" + this.user.id, userParams)
