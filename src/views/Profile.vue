@@ -1,13 +1,20 @@
 <template>
   <div class="profile">
     <div class="container">
-      <h1>{{ user.first_name }}'s Profile</h1>
-      <p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
-      <p>Email: {{ user.email }}</p>
-      <p>City: {{ user.location }}</p>
-      <router-link to="/edit">Edit User Information</router-link><br>
-      <router-link to="/calendar">View Calendar</router-link>
-      <br>
+      <h1 class="title dark">{{ user.first_name }}'s <span class="light text-custom">Profile </span><i class="fa fa-diamond"></i></h1>
+      <div class="table-row">
+        <div class="mb10"></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
+            <p>Email: {{ user.email }}</p>
+            <p>City: {{ user.location }}</p>
+            <router-link to="/edit">Edit User Information</router-link><br>
+            <router-link to="/calendar">View Calendar</router-link>
+            <br>
+          </div>
+        </div>
+      </div>
       <br><h2>My Events</h2>
       <transition-group name="fade">
         <div v-if="showFavorite" v-for="favorite in favorites" v-bind:key="favorite.id" >

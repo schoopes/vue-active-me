@@ -1,16 +1,28 @@
 <template>
   <div class="home">
     <div class="container">
-      <h1>Events in {{ user.location }}</h1>
-      <div v-for="event in events">
-        <br>
-        <h3>{{ event.event }}</h3>
-        <h4>{{ event.city }}</h4>
-        <p>{{ event.venue }}</p>
-        <p>{{ event.address }}</p>
-        <p>{{ event.when }}</p>
-        <p>{{ event.description }}</p>
-        <button v-on:click="favoriteEvent(event.id)">Add to Favorites</button>
+      <div class="table-row">
+        <div class="mb10"></div>
+        <h1 class="title dark">Events in <span class="light text-custom">{{ user.location }}</span></h1>
+        <div v-for="event in events">
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="service service-box service-border service-icon-top custom">
+                    <div class="service-icon">
+                        <i class="fa fa-globe"></i>
+                    </div><!-- End .service-icon -->
+                      <br>
+                      <h3>{{ event.event }}</h3>
+                      <h4>{{ event.city }}</h4>
+                      <p>{{ event.venue }}</p>
+                      <p>{{ event.address }}</p>
+                      <p>{{ event.when }}</p>
+                      <p>{{ event.description }}</p>
+                      <button class="service-title" v-on:click="favoriteEvent(event.id)">Add to Favorites</button>
+                </div><!-- End .service -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -49,8 +49,8 @@
             </div>
           </div>
         </div>
-      </div>
-
+      </div><br>
+      <br><router-link to="/profile">Back to Profile</router-link>
     </div>
   </div>
 </template>

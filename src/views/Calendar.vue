@@ -2,9 +2,12 @@
   <div class="calendar">
     <div v-if="$root.googleEvents" id="calendar">
     </div>
-    <button type="button" v-else v-on:click="googleAuth()">
-      Sign in With Google
-    </button>
+    <div v-else id="button">
+      <h3>To View Your Personal Calendar, Click the Button Below:</h3>
+      <button v-on:click="googleAuth()">
+        Sign in With Google
+      </button>
+    </div>
   </div>
 </template>
 
@@ -12,8 +15,8 @@
 #calendar {
   width: 100%;
 }
-button {
-  margin-top: 200px;
+#button {
+  margin-top: 150px;
 }
 </style>
 
@@ -58,7 +61,7 @@ export default {
   methods: {
     googleAuth: function() {
       window.location.href =
-        "https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/calendar&redirect_uri=http://localhost:8080/google/callback&response_type=code&client_id=172210505146-cglcauiuv08b1rae1pe7a4o4psobdgr6.apps.googleusercontent.com";
+        "https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/calendar&redirect_uri=http://localhost:8080/google/callback&response_type=code%20id_token&client_id=172210505146-cglcauiuv08b1rae1pe7a4o4psobdgr6.apps.googleusercontent.com";
     }
   }
 };

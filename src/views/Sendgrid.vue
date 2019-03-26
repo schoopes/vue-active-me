@@ -1,6 +1,7 @@
 <template>
   <div class="sendgrid">
-    <p>A confirmation email has been sent to your email address. Please check your spam folder if you don't see an email in your inbox and be sure to add our name to your safe sender list. If you don't receive an email at all within 24 hours, please contact our support department. </p>
+    <p>A confirmation email has been sent to your email address. Please check your spam folder if you don't see an email in your inbox and be sure to add our name to your safe sender list. If you don't receive an email at all within 24 hours, please contact our support department. </p><br>
+    <br><router-link to="/">Back to Home</router-link>
   </div>
 </template>
 
