@@ -104,7 +104,9 @@ export default {
     destroyUser: function() {
       axios.delete("api/users/" + this.user.id).then(response => {
         console.log(response.data);
-        this.$router.push("/logout");
+        delete axios.defaults.headers.common["Authorization"];
+        localStorage.removeItem("jwt");
+        this.$router.push("/");
       });
     }
   }

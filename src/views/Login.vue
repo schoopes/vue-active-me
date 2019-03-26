@@ -18,6 +18,12 @@
   </div>
 </template>
 
+<style>
+.form-group {
+  margin-top: 100px;
+}
+</style>
+
 <script>
 import axios from "axios";
 

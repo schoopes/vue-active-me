@@ -2,15 +2,18 @@
   <div class="calendar">
     <div v-if="$root.googleEvents" id="calendar">
     </div>
-    <button v-else v-on:click="googleAuth()">
+    <button type="button" v-else v-on:click="googleAuth()">
       Sign in With Google
     </button>
   </div>
 </template>
 
-<style>
+<style scoped>
 #calendar {
   width: 100%;
+}
+button {
+  margin-top: 200px;
 }
 </style>
 
