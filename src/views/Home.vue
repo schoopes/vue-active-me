@@ -15,30 +15,27 @@
                       <br>
                       <h3>{{ event.event }}</h3>
                       <h4>{{ event.city }}</h4>
-                      <p>{{ event.venue }}</p>
-                      <p>{{ event.address }}</p>
-                      <p>{{ calendarTime(event.when) }}</p>
-                      <p>{{ event.description }}</p>
-                      <button id="button" class="service-title" v-on:click="favoriteEvent(event.id)" data-toggle="modal" data-target="#addedModal">Add to Favorites</button>
-
-                      <div class="modal fade" id="addedModal" tabindex="-1" role="dialog" aria-labelledby="destroyModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Favorite Added to Profile!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div><br>
-
-
+                      <p id="description">{{ event.venue }}</p>
+                      <p id="description">{{ event.address }}</p>
+                      <p id="description">{{ calendarTime(event.when) }}</p>
+                      <p id="description">{{ event.description }}</p>
+                      <button id="favorites-button" class="service-title" v-on:click="favoriteEvent(event.id)" data-toggle="modal" data-target="#addedModal">Add to Favorites</button>
                 </div><!-- End .service -->
               </div>
+              <div class="modal" id="addedModal" tabindex="-1" role="dialog" aria-labelledby="destroyModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Favorite Added to Profile!</p>
+                    </div>
+                  </div>
+                </div>
+              </div><br>
             </div>
           </div>
         </div>
@@ -54,8 +51,13 @@
 #title {
   margin-top: 220px;
 }
-#button {
-  color: #30047d;
+#description {
+  color: #fff;
+}
+#favorites-button {
+  color: #30047d !important;
+  border-color: #b3b3ff;
+  border-width: 3px;
 }
 div.service-icon:hover {
   background-color: #b3b3ff;
@@ -63,6 +65,10 @@ div.service-icon:hover {
 div.service.service-box.service-border:hover {
   border-color: #b3b3ff;
   border-width: 5px;
+}
+.modal {
+  color: #30047d;
+  text-weight: bold;
 }
 </style>
 
@@ -80,6 +86,7 @@ export default {
   mounted: function() {
     axios.get("/api/eventful").then(response => {
       this.events = response.data;
+      console.log(response.data);
     });
     axios.get("/api/users/me").then(response => {
       this.user = response.data;

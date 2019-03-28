@@ -4,7 +4,7 @@
         <div class="header-inner">
             <div class="container-fluid">
                 <router-link to="/">
-                   <a class="text-custom site-logo">Active<span id="logo-color">Me</span></a>
+                   <a id="logo-color-1" class="site-logo">Active<span id="logo-color-2">Me</span></a>
                 </router-link>
 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-container" aria-expanded="false">
@@ -57,7 +57,10 @@
 </template>
 
 <style>
-#logo-color {
+#logo-color-1 {
+    color: #30047d;
+}
+#logo-color-2 {
     color: #b3b3ff;
 }
 

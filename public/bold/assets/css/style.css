@@ -83,7 +83,7 @@ Author: Eon
 body {
   position: relative;
   direction: ltr;
-  color: #fff;
+  color: #30047d;
   font: 400 1rem/1.65 "Raleway", sans-serif;
   background-image: url("https://us.123rf.com/450wm/irrrina/irrrina1506/irrrina150600022/41815417-stock-vector-jigsaw-puzzle-vector-blank-simple-template-2x2-four-pieces.jpg?ver=6");
   -webkit-font-smoothing: antialiased;
@@ -319,7 +319,7 @@ hr {
 }
 
 .bg-wrapper {
-  background-color: #d7dcde !important;
+  background-color: #d7dcde ;
 }
 
 .bg-wrapper.border {
@@ -332,7 +332,7 @@ hr {
 }
 
 .bg-custom {
-  background-color: #30047d !important;
+  background-color: #30047d ;
   color: #fff;
 }
 
@@ -346,7 +346,7 @@ hr {
 }
 
 .bg-custom2 {
-  background-color: #E91E63 !important;
+  background-color: #E91E63 ;
   color: #fff;
 }
 
@@ -360,7 +360,7 @@ hr {
 }
 
 .bg-dark {
-  background-color: #181818 !important;
+  background-color: #181818 ;
   color: #fff;
 }
 
@@ -382,7 +382,7 @@ hr {
 }
 
 .bg-darker {
-  background-color: #111111 !important;
+  background-color: #111111 ;
   color: #fff;
 }
 
@@ -400,7 +400,7 @@ hr {
 }
 
 .bg-lightgray {
-  background-color: #f1f1f1 !important;
+  background-color: #f1f1f1 ;
 }
 
 .bg-lightgray.border {
@@ -413,7 +413,7 @@ hr {
 }
 
 .bg-gray {
-  background-color: #d7d4d4 !important;
+  background-color: #d7d4d4 ;
 }
 
 .bg-gray.border {
@@ -430,7 +430,7 @@ hr {
 }
 
 .bg-gray2 {
-  background-color: #cacaca !important;
+  background-color: #cacaca ;
 }
 
 .bg-gray2.border {
@@ -635,13 +635,13 @@ hr {
 }
 
 .table-row .table-cell.cell-map-container .cell-map {
-  position: absolute !important;
+  position: absolute ;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  height: 100% !important;
-  margin: 0 !important;
+  height: 100% ;
+  margin: 0 ;
   z-index: 99;
 }
 
@@ -765,31 +765,31 @@ a:hover, a:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #fff ;
 }
 
 .text-white a {
-  color: inherit !important;
+  color: inherit ;
 }
 
 .text-white a:hover, .text-white a:focus {
-  color: #E91E63 !important;
+  color: #E91E63 ;
 }
 
 .bg-custom2 .text-white a:hover, .bg-custom2 .text-white a:focus {
-  color: #30047d !important;
+  color: #30047d ;
 }
 
 .text-muted {
-  color: #777 !important;
+  color: #777 ;
 }
 
 .text-light {
-  font-weight: 300 !important;
+  font-weight: 300 ;
 }
 
 .text-normal {
-  font-weight: 400 !important;
+  font-weight: 400 ;
 }
 
 .text-spaced {
@@ -1075,31 +1075,31 @@ p {
 }
 
 .bg-white .title-border > span {
-  background-color: #fff !important;
+  background-color: #fff ;
 }
 
 .bg-gray .title-border > span {
-  background-color: #d7d4d4 !important;
+  background-color: #d7d4d4 ;
 }
 
 .bg-gray2 .title-border > span {
-  background-color: #cacaca !important;
+  background-color: #cacaca ;
 }
 
 .bg-wrapper .title-border > span {
-  background-color: #d7dcde !important;
+  background-color: #d7dcde ;
 }
 
 .bg-custom .title-border > span {
-  background-color: #30047d !important;
+  background-color: #30047d ;
 }
 
 .bg-custom2 .title-border > span {
-  background-color: #E91E63 !important;
+  background-color: #E91E63 ;
 }
 
 .bg-dark .title-border > span {
-  background-color: #181818 !important;
+  background-color: #181818 ;
 }
 
 .title-border.text-right,
@@ -1725,7 +1725,7 @@ p {
   padding: 0.8rem 1rem;
   color: #323232;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
-  border: none !important;
+  border: none ;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
@@ -1744,7 +1744,7 @@ p {
 
 @media (max-width: 767px) {
   .nav.nav-tabs:not(.nav-justified) > li, .nav.nav-pills:not(.nav-justified) > li {
-    float: none !important;
+    float: none ;
     width: 100%;
   }
 }
@@ -1755,7 +1755,7 @@ p {
 }
 
 .nav.nav-justified > li + li {
-  margin-left: 0 !important;
+  margin-left: 0 ;
 }
 
 @media (max-width: 767px) {
@@ -1788,7 +1788,7 @@ p {
 }
 
 .nav-pills > li > a {
-  border-radius: 0 !important;
+  border-radius: 0 ;
 }
 
 .nav-pills > li + li {
@@ -1932,7 +1932,7 @@ p {
 }
 
 .btn.no-radius {
-  border-radius: 0 !important;
+  border-radius: 0 ;
 }
 
 .btn i {
@@ -2018,7 +2018,7 @@ p {
 }
 
 .btn.btn-custom:hover, .btn.btn-custom:focus {
-  color: #fff;
+  color: #30047d;
   background-color: #512e90;
   border-color: #512e90;
 }
@@ -2683,7 +2683,7 @@ textarea.form-control {
 
 .textarea-container .form-control {
   border-top-color: transparent;
-  border-radius: 0 0 4px 4px !important;
+  border-radius: 0 0 4px 4px ;
 }
 
 .textarea-container .form-control:focus {
@@ -3122,7 +3122,7 @@ label.error {
 
 .service.service-box:hover {
   color: #fff;
-  background-color: #30047d !important;
+  background-color: #30047d ;
   border-color: #b3b3ff;
   border-width: 3px;
 }
@@ -3144,7 +3144,7 @@ label.error {
 }
 
 .service.service-box.gray:not(.service-border) {
-  background-color: #d7d4d4 !important;
+  background-color: #d7d4d4 ;
 }
 
 .service.service-box.gray:not(.service-border) .service-icon {
@@ -3154,7 +3154,7 @@ label.error {
 
 .service.service-box.gray:not(.service-border):hover {
   color: #323232;
-  background-color: #bebaba !important;
+  background-color: #bebaba ;
 }
 
 .service.service-box.gray:not(.service-border):hover a {
@@ -3171,7 +3171,7 @@ label.error {
 
 .service.service-box.custom:not(.service-border) {
   color: #fff;
-  background-color: #30047d !important;
+  background-color: #30047d ;
 }
 
 .service.service-box.custom:not(.service-border) .service-icon {
@@ -3192,7 +3192,7 @@ label.error {
 }
 
 .service.service-box.custom:not(.service-border):hover {
-  background-color: #512e90 !important;
+  background-color: #512e90 ;
 }
 
 .service.service-box.custom:not(.service-border):hover .service-icon {
@@ -3201,7 +3201,7 @@ label.error {
 
 .service.service-box.custom2:not(.service-border) {
   color: #fff;
-  background-color: #E91E63 !important;
+  background-color: #E91E63 ;
 }
 
 .service.service-box.custom2:not(.service-border) .service-icon {
@@ -3222,7 +3222,7 @@ label.error {
 }
 
 .service.service-box.custom2:not(.service-border):hover {
-  background-color: #c1134e !important;
+  background-color: #c1134e ;
 }
 
 .service.service-box.custom2:not(.service-border):hover .service-icon {
@@ -3231,7 +3231,7 @@ label.error {
 
 .service.service-box.dark:not(.service-border) {
   color: #fff;
-  background-color: #181818 !important;
+  background-color: #181818 ;
 }
 
 .service.service-box.dark:not(.service-border) .service-icon {
@@ -3252,7 +3252,7 @@ label.error {
 }
 
 .service.service-box.dark:not(.service-border):hover {
-  background-color: black !important;
+  background-color: black ;
 }
 
 .service.service-box.dark:not(.service-border):hover .service-icon {
@@ -3269,7 +3269,7 @@ label.error {
 }
 
 .service.service-border.custom {
-  background-color: #30047d !important;
+  background-color: #30047d ;
   border-color: #30047d;
 }
 
@@ -3279,7 +3279,7 @@ label.error {
 }
 
 .service.service-border.custom:hover {
-  background-color: #30047d !important;
+  background-color: #30047d ;
   border-color: #512e90;
 }
 
@@ -3288,7 +3288,7 @@ label.error {
 }
 
 .service.service-border.custom2 {
-  background-color: transparent !important;
+  background-color: transparent ;
   border-color: #E91E63;
 }
 
@@ -3298,7 +3298,7 @@ label.error {
 }
 
 .service.service-border.custom2:hover {
-  background-color: #E91E63 !important;
+  background-color: #E91E63 ;
   border-color: #c1134e;
 }
 
@@ -3307,7 +3307,7 @@ label.error {
 }
 
 .service.service-border.dark {
-  background-color: transparent !important;
+  background-color: transparent ;
   border-color: #181818;
 }
 
@@ -3317,7 +3317,7 @@ label.error {
 }
 
 .service.service-border.dark:hover {
-  background-color: #181818 !important;
+  background-color: #181818 ;
   border-color: black;
 }
 
@@ -3725,21 +3725,21 @@ label.error {
 }
 
 .table.table-colored > thead > tr {
-  border: none !important;
+  border: none ;
 }
 
 .table.table-colored > thead > tr > th,
 .table.table-colored > thead > tr > td {
   color: #323232;
-  border: none !important;
+  border: none ;
 }
 
 .table.table-colored > tbody > tr {
-  border: none !important;
+  border: none ;
 }
 
 .table.table-colored > tbody > tr > td {
-  border: none !important;
+  border: none ;
 }
 
 .table.table-hover tbody > tr:hover {
@@ -4706,7 +4706,7 @@ label.error {
   background-color: transparent;
   border: none;
   border-right: 1px solid #d7dcde;
-  margin: 0 !important;
+  margin: 0 ;
   border-radius: 0;
   box-shadow: none;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
@@ -5069,8 +5069,8 @@ label.error {
 }
 
 .dropdown.cart-dropdown .product figure img {
-  width: 80px !important;
-  height: auto !important;
+  width: 80px ;
+  height: auto ;
 }
 
 .dropdown.cart-dropdown .product .product-meta {
@@ -5287,7 +5287,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   /* Dsable Animation for mobile/collapsed menu*/
   .navbar-collapse .dropdown > .dropdown-menu,
   .navbar-collapse .dropdown.open > .dropdown-menu {
-    animation: none !important;
+    animation: none ;
   }
 }
 
@@ -5378,7 +5378,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
     padding: 0.4rem 0;
   }
   .navbar-nav > li.pull-right {
-    float: none !important;
+    float: none ;
   }
   .navbar-nav > li .visible-inline-xs {
     margin-right: 0.5rem;
@@ -5554,8 +5554,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .navbar-nav .dropdown-menu.megamenu {
-  background-position: bottom right !important;
-  background-repeat: no-repeat !important;
+  background-position: bottom right ;
+  background-repeat: no-repeat ;
 }
 
 @media (max-width: 767px) {
@@ -5616,7 +5616,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
     border-right: 1px solid #b9c2c5;
   }
   .header-bottom .navbar-nav.navbar-nav-table > li {
-    float: none !important;
+    float: none ;
     display: table-cell;
     text-align: center;
   }
@@ -5754,7 +5754,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 @media (min-width: 768px) {
   .header.header2 .navbar-collapse {
     float: right;
-    position: static !important;
+    position: static ;
   }
 }
 
@@ -5859,7 +5859,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 @media (max-width: 991px) and (min-width: 768px) {
   .header.header2.straight-sm .navbar-collapse {
-    float: right !important;
+    float: right ;
     width: auto;
   }
   .header.header2.straight-sm .navbar-collapse .navbar-nav > li {
@@ -6692,7 +6692,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 /* Fix For jump */
 @media (min-width: 992px) {
   .transparent-sticky-header .sticky-wrapper {
-    height: 0 !important;
+    height: 0 ;
   }
 }
 
@@ -6722,7 +6722,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .slider-container .tp-caption strong {
-  font-weight: 700 !important;
+  font-weight: 700 ;
 }
 
 /* Homepages - Index3*/
@@ -6849,7 +6849,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 /* Homepages - Index9 */
 @media (min-width: 1360px) {
   .img-margin {
-    margin-bottom: 110px !important;
+    margin-bottom: 110px ;
   }
 }
 
@@ -6933,7 +6933,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 @media (max-width: 767px) {
   .info-boxes-container .info-box.text-center {
-    text-align: left !important;
+    text-align: left ;
   }
 }
 
@@ -7591,7 +7591,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .section .pagination-container.min-width {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
 }
 
 .section #map {
@@ -8145,7 +8145,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .swiper-container .entry {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
 }
 
 .entry .entry-media {
@@ -8653,7 +8653,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 #blog-item-container {
   overflow: hidden;
   margin-bottom: 2.5rem;
-  padding: 0 !important;
+  padding: 0 ;
 }
 
 @media (max-width: 767px) {
@@ -10047,23 +10047,23 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .product .product-action-container .product-add-btn + .tooltip {
-  left: 0 !important;
+  left: 0 ;
 }
 
 .product .product-action-container .product-add-btn + .tooltip.top .tooltip-arrow {
-  left: 0 !important;
+  left: 0 ;
 }
 
 .product .product-action-container .product-compare-btn + .tooltip {
-  left: auto !important;
-  right: 0 !important;
+  left: auto ;
+  right: 0 ;
 }
 
 .product .product-action-container .product-compare-btn + .tooltip.top .tooltip-arrow {
-  left: auto !important;
-  right: 0 !important;
-  margin-left: 0 !important;
-  margin-right: -8px !important;
+  left: auto ;
+  right: 0 ;
+  margin-left: 0 ;
+  margin-right: -8px ;
 }
 
 .product .product-action-container .btn {
@@ -10074,7 +10074,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   opacity: 1;
   padding: 0.6em 0.25em;
   font-size: 1rem;
-  border-radius: 0 !important;
+  border-radius: 0 ;
 }
 
 .product .product-action-container .btn i {
@@ -10811,7 +10811,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .filter-size-box {
-  color: #323232 !important;
+  color: #323232 ;
   background-color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
@@ -10821,7 +10821,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .filter-size-box.active, .filter-size-box:hover, .filter-size-box:focus {
-  color: #fff !important;
+  color: #fff ;
   background-color: #30047d;
 }
 
@@ -10918,7 +10918,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .noUi-state-drag * {
-  cursor: inherit !important;
+  cursor: inherit ;
 }
 
 /* Painting and performance;
@@ -11902,7 +11902,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .footer-bottom.transparent {
-  background-color: transparent !important;
+  background-color: transparent ;
   border-top: 2px solid #0b0b0b;
 }
 
@@ -13060,7 +13060,7 @@ button.swiper-pagination-bullet {
 }
 
 .dark .soon-nav-container .soon-menu-toggle.open .icon-bar {
-  background: transparent !important;
+  background: transparent ;
 }
 
 .dark .soon-nav-container .soon-nav .soon-menu li a {

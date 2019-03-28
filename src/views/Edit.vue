@@ -5,29 +5,29 @@
         <li v-for="error in errors">{{ error }}</li>
       </ul>
       <form v-on:submit.prevent="submit()">
-        <div>
+        <div id="text">
           First Name: <input type="text" class="form-control" v-model="firstName">
         </div>
-        <div>
+        <div id="text">
           Last Name: <input type="text" class="form-control" v-model="lastName">
         </div>
-        <div>
+        <div id="text">
           Email: <input type="email" class="form-control" v-model="email">
         </div>
-        <div>
+        <div id="text">
           City: <input type="text" class="form-control" v-model="location">
         </div><br>
-        <button type="button" v-on:click="updatePassword = !updatePassword">
+        <button id="change-password" type="button" v-on:click="updatePassword = !updatePassword">
           Change Password
         </button><br>
         <div v-if="updatePassword">
           <br><input type="password" class="form-control" v-model="password" placeholder="Enter New Password">
         </div><br>
         <div>
-          <input type="submit" class="btn btn-success" value="Update Information">
+          <input id="button" type="submit" class="btn btn-success" value="Update Information">
         </div><br>
       </form>
-      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#destroyModal">
+      <button id="button" type="button" class="btn btn-danger" data-toggle="modal" data-target="#destroyModal">
         Delete Account Permanently
       </button>
      <!--  Are You Sure Modal -->
@@ -50,10 +50,36 @@
           </div>
         </div>
       </div><br>
-      <br><router-link to="/profile">Back to Profile</router-link>
+      <br><router-link id="router" to="/profile">Back to Profile</router-link>
     </div>
   </div>
 </template>
+
+<style>
+#change-password {
+  background-color: #fff;
+  color: #30047d;
+}
+#button {
+  border-width: 3px;
+  color: #fff !important;
+}
+#router {
+  color: #30047d;
+  font-weight: bold;
+}
+#router:hover {
+  color: #b3b3ff;
+}
+#text {
+  color: #30047d !important;
+  font-weight: bold;
+}
+.user-edit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+</style>
 
 <script>
 import axios from "axios";

@@ -17,7 +17,7 @@
       </div>
       <br><h2 id="events">My Events</h2>
       <transition-group name="fade">
-        <div v-if="showFavorite" v-for="favorite in favorites" v-bind:key="favorite.id" >
+        <div v-for="favorite in favorites" v-bind:key="favorite.id" >
           <div class="row">
             <div class="col">
                 <div class="service service-box service-border">
@@ -26,7 +26,7 @@
                       <p>City: {{ favorite.city }}}</p>
                       <p>Venue: {{ favorite.venue }}</p>
                       <p>When: {{ calendarTime(favorite.start) }}</p>
-                      <button id="button" class="service-title" v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button>
+                      <button id="button" class="service-title" v-on:click="destroyFavorite(favorite)" >Remove From Favorites</button>
                 </div><!-- End .service -->
             </div>
           </div>
@@ -50,6 +50,7 @@
 }
 #button {
   color: #30047d;
+  border-color: #b3b3ff;
 }
 #events {
   color: #30047d;
@@ -74,7 +75,6 @@ export default {
       user: [],
       favorites: [],
       userId: "",
-      showFavorite: true,
       attendees: []
     };
   },
@@ -87,30 +87,18 @@ export default {
       this.user = response.data;
     });
   },
-  // computed: {
-  //   getAttendees(eventfulId) {
-  //     axios.get("/api/favorites/" + eventfulId).then(response => {
-  //       console.log(response.data);
-  //       return response.data;
-  //     });
-  //   }
-  // },
   methods: {
     calendarTime: function(date) {
       return moment(date).format("MMMM Do YYYY @ h:mm: a");
     },
-    destroyFavorite(eventfulId) {
-      axios.delete("/api/favorites/" + eventfulId).then(response => {
+    destroyFavorite(favorite) {
+      axios.delete("/api/favorites/" + favorite.id).then(response => {
         console.log(response.data);
+        var index = this.favorites.indexOf(favorite);
+        this.favorites.splice(index, 1);
         this.$router.push("/profile");
       });
     }
-    // getAttendees(eventfulId) {
-    //   return axios.get("/api/favorites/" + eventfulId).then(response => {
-    //     this.attendees.push(response.data.attendees);
-    //     console.log(this.attendees);
-    //   });
-    // }
   }
 };
 </script>
