@@ -57,7 +57,7 @@ Author: Eon
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #673AB7;
+  background-color: #30047d;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -83,9 +83,9 @@ Author: Eon
 body {
   position: relative;
   direction: ltr;
-  color: #323232;
+  color: #fff;
   font: 400 1rem/1.65 "Raleway", sans-serif;
-  background-color: #9a9a9a;
+  background-image: url("https://us.123rf.com/450wm/irrrina/irrrina1506/irrrina150600022/41815417-stock-vector-jigsaw-puzzle-vector-blank-simple-template-2x2-four-pieces.jpg?ver=6");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -111,12 +111,12 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
 ::selection {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -332,7 +332,7 @@ hr {
 }
 
 .bg-custom {
-  background-color: #673AB7 !important;
+  background-color: #30047d !important;
   color: #fff;
 }
 
@@ -497,7 +497,7 @@ hr {
 }
 
 .overlay-container .overlay.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .overlay-container .overlay.custom2 {
@@ -679,7 +679,7 @@ h6, .h6 {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   line-height: 1;
-  color: #212121;
+  color: #fff;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -727,17 +727,29 @@ h6,
 }
 
 a {
-  color: #673AB7;
+  color: #fff;
   transition: color 0.4s;
 }
 
 a:hover, a:focus {
-  color: #E91E63;
+  color: #b626d0;
   text-decoration: none;
 }
 
+.bordered-text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #b3b3ff;
+  background-color: #30047d;
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .bg-custom2 a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .bg-custom2 a:hover, .bg-custom2 a:focus {
@@ -745,7 +757,7 @@ a:hover, a:focus {
 }
 
 .text-custom {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .text-custom2 {
@@ -765,7 +777,7 @@ a:hover, a:focus {
 }
 
 .bg-custom2 .text-white a:hover, .bg-custom2 .text-white a:focus {
-  color: #673AB7 !important;
+  color: #30047d !important;
 }
 
 .text-muted {
@@ -853,7 +865,7 @@ blockquote cite {
   font-size: 0.9rem;
   font-weight: 600;
   font-style: italic;
-  color: #673AB7;
+  color: #30047d;
 }
 
 blockquote.blockquote-reverse {
@@ -892,7 +904,7 @@ p {
 }
 
 .highlight.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .highlight.custom2 {
@@ -917,7 +929,7 @@ p {
 }
 
 .dropcap.custom::first-letter {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .dropcap.custom2::first-letter {
@@ -1017,7 +1029,7 @@ p {
 }
 
 .title.custom:after {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .title.custom2:after {
@@ -1079,7 +1091,7 @@ p {
 }
 
 .bg-custom .title-border > span {
-  background-color: #673AB7 !important;
+  background-color: #30047d !important;
 }
 
 .bg-custom2 .title-border > span {
@@ -1111,7 +1123,7 @@ p {
 
 .title-border.custom, .title-border.text-right.custom,
 .title-border.text-center.custom > span {
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 .title-border.title-bg-line, .title-border.text-center.title-bg-line, .title-border.title-bg, .title-border.text-center.title-bg {
@@ -1139,7 +1151,7 @@ p {
 }
 
 .title-bottom-border.custom {
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 .title-bg-line,
@@ -1236,7 +1248,7 @@ p {
 .title-border.title-bg.custom,
 .title-bg-line.custom:after,
 .bg-custom .title-border > span {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 /* Breadcrumbs */
@@ -1250,7 +1262,7 @@ p {
 }
 
 .breadcrumb li a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .breadcrumb li a:hover, .breadcrumb li a:focus {
@@ -1408,7 +1420,7 @@ p {
 }
 
 .page-header.parallax .breadcrumb li a:hover, .page-header.parallax .breadcrumb li a:focus, .page-header.bg-image .breadcrumb li a:hover, .page-header.bg-image .breadcrumb li a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .page-header.parallax .breadcrumb > .active, .page-header.bg-image .breadcrumb > .active {
@@ -1450,7 +1462,7 @@ p {
 }
 
 .page-header.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #8259cb;
   border-color: #7446c4;
 }
@@ -1476,11 +1488,11 @@ p {
 }
 
 .page-header.custom.parallax:before, .page-header.custom.bg-image:before {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .page-header.custom.parallax .breadcrumb, .page-header.custom.bg-image .breadcrumb {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .page-header.custom.parallax .breadcrumb li a, .page-header.custom.bg-image .breadcrumb li a {
@@ -1675,8 +1687,8 @@ p {
 
 .panel.panel-white .panel-heading a:hover, .panel.panel-white .panel-heading a:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .panel.panel-inverse .panel-heading a {
@@ -1692,7 +1704,7 @@ p {
 }
 
 .panel.panel-custom .panel-heading a {
-  background-color: #673AB7;
+  background-color: #30047d;
   border-color: #5c34a4;
   color: #fff;
 }
@@ -1725,9 +1737,9 @@ p {
 }
 
 .nav.nav-tabs > li > a:hover, .nav.nav-pills > li > a:hover {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 @media (max-width: 767px) {
@@ -1787,7 +1799,7 @@ p {
 .nav-pills > li.active a:hover,
 .nav-pills > li.active a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .nav-pills > li:nth-child(2n):not(.active) > a {
@@ -1795,7 +1807,7 @@ p {
 }
 
 .nav-pills > li:nth-child(2n):not(.active) > a:hover, .nav-pills > li:nth-child(2n):not(.active) > a:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .tab-content {
@@ -1995,14 +2007,14 @@ p {
 
 .btn-group .dropdown-menu li a:hover, .btn-group .dropdown-menu li a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 /* Button Colors */
 .btn.btn-custom {
-  color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  color: #30047d;
+  background-color: #fff;
+  border-color: #30047d;
 }
 
 .btn.btn-custom:hover, .btn.btn-custom:focus {
@@ -2012,15 +2024,15 @@ p {
 }
 
 .btn.btn-custom.btn-border {
-  color: #673AB7;
+  color: #30047d;
   background-color: transparent;
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 .btn.btn-custom.btn-border:hover, .btn.btn-custom.btn-border:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .btn.btn-custom2 {
@@ -2355,8 +2367,8 @@ p {
 
 .btn.btn-white:hover, .btn.btn-white:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .btn.btn-white.btn-border {
@@ -2367,8 +2379,8 @@ p {
 
 .btn.btn-white.btn-border:hover, .btn.btn-white.btn-border:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 /* Added elements page for margin */
@@ -2388,7 +2400,7 @@ p {
   margin-bottom: 1.75rem;
   color: #323232;
   background-color: #fff;
-  border-color: #fff;
+  border-color: #b3b3ff;
   padding: 1rem 1rem;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
   box-shadow: none;
@@ -2507,7 +2519,7 @@ p {
 .bg-dark .form-control:focus {
   background-color: #272727;
   border-color: #272727;
-  box-shadow: 0 0 1em #673AB7;
+  box-shadow: 0 0 1em #30047d;
 }
 
 .bg-custom .form-control {
@@ -2545,8 +2557,8 @@ p {
 
 .input-group .input-group-addon {
   font-size: 1rem;
-  border-color: #673AB7;
-  background-color: #673AB7;
+  border-color: #30047d;
+  background-color: #30047d;
   color: #fff;
   padding: 1rem;
   border-radius: 4px 0 0 4px;
@@ -2659,7 +2671,7 @@ textarea.form-control {
   padding: 1rem;
   z-index: 90;
   text-align: left;
-  border-right: 1px solid #673AB7;
+  border-right: 1px solid #30047d;
   border-radius: 4px 4px 0 0;
 }
 
@@ -2675,7 +2687,7 @@ textarea.form-control {
 }
 
 .textarea-container .form-control:focus {
-  border-top-color: #673AB7;
+  border-top-color: #30047d;
 }
 
 /* Validation error */
@@ -2753,7 +2765,7 @@ label.error {
   top: 50%;
   margin-top: -7px;
   margin-left: -7px;
-  color: #673AB7;
+  color: #30047d;
   opacity: 0;
   filter: alpha(opacity=0);
   border-radius: 0;
@@ -2793,7 +2805,7 @@ label.error {
   top: 50%;
   margin-top: -6px;
   margin-left: -6px;
-  background-color: #673AB7;
+  background-color: #30047d;
   border-radius: 50%;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
   -ms-transform: scale(0);
@@ -2846,7 +2858,7 @@ label.error {
   font-size: 1.1rem;
   line-height: 1.2;
   font-weight: 700;
-  color: #673AB7;
+  color: #30047d;
   margin-bottom: 10px;
 }
 
@@ -2879,7 +2891,7 @@ label.error {
 
 .progress .progress-bar {
   box-shadow: none;
-  background-color: #673AB7;
+  background-color: #30047d;
   border-radius: 8px;
 }
 
@@ -2889,12 +2901,12 @@ label.error {
 }
 
 .progress .progress-bar.gradient1 {
-  background: linear-gradient(to right, #673AB7 0%, #E91E63 100%);
-  background-color: #673AB7;
+  background: linear-gradient(to right, #30047d 0%, #E91E63 100%);
+  background-color: #30047d;
 }
 
 .progress .progress-bar.gradient2 {
-  background: linear-gradient(to right, #E91E63 0%, #673AB7 100%);
+  background: linear-gradient(to right, #E91E63 0%, #30047d 100%);
   background-color: #E91E63;
 }
 
@@ -2903,7 +2915,7 @@ label.error {
 }
 
 .progress .progress-bar.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .progress .progress-bar.custom2 {
@@ -2964,7 +2976,7 @@ label.error {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
-  color: #673AB7;
+  color: #30047d;
 }
 
 /* Elements Sass */
@@ -2979,7 +2991,7 @@ label.error {
 }
 
 .service > i.custom {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .service > i.custom2 {
@@ -3002,7 +3014,7 @@ label.error {
   width: 2.5rem;
   height: 4.25rem;
   border-radius: 0.5em/.25em;
-  color: #673AB7;
+  color: #30047d;
   background: #d7d4d4;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
@@ -3036,7 +3048,7 @@ label.error {
 }
 
 .service .service-icon.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -3060,14 +3072,15 @@ label.error {
 .service .service-title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color: #30047d;
 }
 
 .service .service-title a {
-  color: #212121;
+  color: #30047d;
 }
 
 .service .service-title a:hover, .service .service-title a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .service .service-title:last-child {
@@ -3086,14 +3099,15 @@ label.error {
 
 .service.service-box {
   position: relative;
-  background-color: #fff;
-  padding: 1.8rem 1rem;
+  background-color: #30047d;
+  opacity: 0.8;
+  padding: 1rem 1rem;
   text-align: center;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
 
 .service.service-box.service-icon-top {
-  padding-top: 3.8rem;
+  padding-top: 1.8rem;
   margin: 2rem 0 3rem;
 }
 
@@ -3108,23 +3122,25 @@ label.error {
 
 .service.service-box:hover {
   color: #fff;
-  background-color: #673AB7 !important;
+  background-color: #30047d !important;
+  border-color: #b3b3ff;
+  border-width: 3px;
 }
 
 .service.service-box:hover .service-icon.custom {
-  background-color: #4d2b89;
+  background-color: #b3b3ff;
 }
 
 .service.service-box:hover .service-title {
-  color: #fff;
+  color: #30047d;
 }
 
 .service.service-box:hover .service-title a {
-  color: #f1f1f1;
+  color: #30047d;
 }
 
 .service.service-box:hover .service-title a:hover, .service.service-box:hover .service-title a:focus {
-  color: #fff;
+  color: #30047d;
 }
 
 .service.service-box.gray:not(.service-border) {
@@ -3146,16 +3162,16 @@ label.error {
 }
 
 .service.service-box.gray:not(.service-border):hover a:hover, .service.service-box.gray:not(.service-border):hover a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .service.service-box.gray:not(.service-border):hover .service-icon {
-  background-color: #d7d4d4;
+  background-color: #b3b3ff;
 }
 
 .service.service-box.custom:not(.service-border) {
   color: #fff;
-  background-color: #673AB7 !important;
+  background-color: #30047d !important;
 }
 
 .service.service-box.custom:not(.service-border) .service-icon {
@@ -3180,7 +3196,7 @@ label.error {
 }
 
 .service.service-box.custom:not(.service-border):hover .service-icon {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .service.service-box.custom2:not(.service-border) {
@@ -3244,7 +3260,7 @@ label.error {
 }
 
 .service.service-border {
-  background-color: transparent;
+  background-color: #30047d;
   border: 1px solid #d7d4d4;
 }
 
@@ -3253,17 +3269,17 @@ label.error {
 }
 
 .service.service-border.custom {
-  background-color: transparent !important;
-  border-color: #673AB7;
+  background-color: #30047d !important;
+  border-color: #30047d;
 }
 
 .service.service-border.custom .service-icon {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .service.service-border.custom:hover {
-  background-color: #673AB7 !important;
+  background-color: #30047d !important;
   border-color: #512e90;
 }
 
@@ -3362,7 +3378,7 @@ label.error {
 
 .service.icon-left:hover .icon-bg {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .service.icon-left:hover .icon-bg.custom {
@@ -3408,7 +3424,7 @@ label.error {
 }
 
 .text-block .block-title a:hover, .text-block .block-title a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .text-block .block-title + .readmore {
@@ -3431,7 +3447,7 @@ label.error {
 
 .text-block .block-icon.custom {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .text-block .block-icon.custom2 {
@@ -3519,7 +3535,7 @@ label.error {
 }
 
 .text-block .fa-ul li a:hover, .text-block .fa-ul li a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .text-block .readmore {
@@ -3534,7 +3550,7 @@ label.error {
 }
 
 .text-block .readmore:hover, .text-block .readmore:focus, .text-block .readmore.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -3619,8 +3635,8 @@ label.error {
 }
 
 .table thead > tr {
-  border-top: 1px solid #673AB7;
-  border-bottom: 1px solid #673AB7;
+  border-top: 1px solid #30047d;
+  border-bottom: 1px solid #30047d;
 }
 
 .table thead > tr > th {
@@ -3630,8 +3646,8 @@ label.error {
   font-family: "Raleway", sans-serif;
   color: #fff;
   padding: 1.1rem 1rem;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 @media (min-width: 992px) {
@@ -3818,7 +3834,7 @@ label.error {
 }
 
 .callout.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #9f80d7;
 }
 
@@ -3955,7 +3971,7 @@ label.error {
 
 .count {
   display: block;
-  color: #673AB7;
+  color: #30047d;
   font-size: 2rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -3968,7 +3984,7 @@ label.error {
   width: 3rem;
   border-radius: 50%;
   background-color: #f6f6fa;
-  color: #673AB7;
+  color: #30047d;
   font-size: 1rem;
   line-height: 3rem;
   margin-bottom: 0.3rem;
@@ -3976,7 +3992,7 @@ label.error {
 }
 
 .count-icon.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -4036,7 +4052,7 @@ label.error {
 }
 
 .count-box.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -4063,7 +4079,7 @@ label.error {
 }
 
 .count-box.dark .count {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .count-box.dark .count-title {
@@ -4072,7 +4088,7 @@ label.error {
 
 .count-box.dark .count-icon {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .count-box.dark:hover {
@@ -4102,7 +4118,7 @@ label.error {
   color: #fff;
   opacity: 1;
   text-shadow: none;
-  background-color: #673AB7;
+  background-color: #30047d;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
 
@@ -4161,7 +4177,7 @@ label.error {
 }
 
 .modal-content .modal-header {
-  background-color: #673AB7;
+  background-color: #30047d;
   border: none;
   padding: 1.25rem 1rem;
 }
@@ -4288,8 +4304,8 @@ label.error {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .pagination > li + li > a,
@@ -4316,8 +4332,8 @@ label.error {
 .pagination > li.active > span:focus {
   color: #fff;
   font-weight: 700;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 /* Elements Social Icons */
@@ -4356,7 +4372,7 @@ label.error {
 
 .social-icons .social-icon:hover, .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .bg-white .social-icons .social-icon {
@@ -4365,7 +4381,7 @@ label.error {
 
 .bg-white .social-icons .social-icon:hover, .bg-white .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .social-icons.circle .social-icon {
@@ -4389,7 +4405,7 @@ label.error {
 }
 
 .pricing-table header {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
   padding: 1.9rem 0;
 }
@@ -4501,7 +4517,7 @@ label.error {
 }
 
 .header a:hover, .header a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .header .header-dropdown .dropdown-menu {
@@ -4525,7 +4541,7 @@ label.error {
 
 .header .header-dropdown .dropdown-menu > li > a:hover, .header .header-dropdown .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .header .header-dropdown .dropdown-menu > li:last-child > a {
@@ -4548,7 +4564,7 @@ label.error {
 }
 
 .header-top a:hover, .header-top a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .header-top .header-dropdown > a {
@@ -4591,8 +4607,8 @@ label.error {
 }
 
 .header-top .header-dropdown.open > a, .header-top .header-dropdown:hover > a, .header-top .header-dropdown:focus > a {
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
   color: #fff;
 }
 
@@ -4648,7 +4664,7 @@ label.error {
 }
 
 .header-top .top-links a {
-  color: #673AB7;
+  color: #30047d;
   display: inline-block;
   font-size: 0.85rem;
 }
@@ -4701,9 +4717,9 @@ label.error {
 }
 
 .header-top .social-icons .social-icon:hover, .header-top .social-icons .social-icon:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
-  border-color: #673AB7;
+  border-color: #30047d;
   box-shadow: none;
 }
 
@@ -4801,7 +4817,7 @@ label.error {
 }
 
 .header-info-boxes .header-info-box .header-info-icon.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -4947,7 +4963,7 @@ label.error {
   display: inline-block;
   font-size: 2.25rem;
   line-height: 1;
-  color: #673AB7;
+  color: #30047d;
   padding-top: 2.85rem;
   padding-bottom: 2.85rem;
   padding-left: 2rem;
@@ -4976,7 +4992,7 @@ label.error {
   transform: translateX(-50%);
   border-radius: 50%;
   background-color: #fff;
-  color: #673AB7;
+  color: #30047d;
   text-align: center;
   font-weight: 600;
   font-size: 0.75rem;
@@ -4997,7 +5013,7 @@ label.error {
 }
 
 .dropdown.cart-dropdown.dark.open > a, .dropdown.cart-dropdown.dark:hover > a, .dropdown.cart-dropdown.dark:focus > a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .dropdown.cart-dropdown .dropdown-menu {
@@ -5005,7 +5021,7 @@ label.error {
   right: 0;
   padding: 1rem 1.1rem 1.1rem;
   width: auto;
-  border-top: 0.2rem solid #673AB7;
+  border-top: 0.2rem solid #30047d;
 }
 
 @media (min-width: 768px) {
@@ -5372,11 +5388,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   }
   .navbar-nav > li.open > a, .navbar-nav > li.open > a:hover, .navbar-nav > li.open > a:focus {
     color: #fff;
-    background-color: #673AB7;
+    background-color: #30047d;
   }
   .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #673AB7;
+    background-color: #30047d;
   }
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -5443,7 +5459,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
     padding-left: 0;
   }
   .navbar-nav > li.open > a, .navbar-nav > li.open > a:hover, .navbar-nav > li.open > a:focus, .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus {
-    color: #673AB7;
+    color: #30047d;
     background-color: transparent;
   }
   .navbar-nav > li.megamenu-container {
@@ -5511,7 +5527,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   border: none;
   border-radius: 0;
   background-color: #fff;
-  border-top: 0.2rem solid #673AB7;
+  border-top: 0.2rem solid #30047d;
 }
 
 @media (min-width: 992px) {
@@ -5529,12 +5545,12 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .navbar-nav .dropdown-menu > li > a:hover, .navbar-nav .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .navbar-nav .dropdown-menu > li.open > a, .navbar-nav .dropdown-menu > li.open > a:hover, .navbar-nav .dropdown-menu > li.open > a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .navbar-nav .dropdown-menu.megamenu {
@@ -5572,7 +5588,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .navbar-nav .dropdown-menu.megamenu a:hover, .navbar-nav .dropdown-menu.megamenu a:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .navbar-nav .dropdown-menu .angle {
@@ -5639,8 +5655,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   margin-top: 0.5rem;
   margin-right: 0;
   margin-bottom: 0.5rem;
-  background-color: #673AB7;
-  border: 1px solid #673AB7;
+  background-color: #30047d;
+  border: 1px solid #30047d;
   border-radius: 0;
   font-size: 0;
   color: #fff;
@@ -5708,8 +5724,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .menu-toggle:hover,
 .sidemenu-toggle:hover {
   color: #fff;
-  background-color: #E91E63;
-  border-color: #E91E63;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .navbar-toggle:hover .icon-bar,
@@ -5720,8 +5736,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .navbar-toggle:not(.collapsed) {
   color: #fff;
-  background-color: #E91E63;
-  border-color: #E91E63;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .navbar-toggle:not(.collapsed) .icon-bar {
@@ -5807,7 +5823,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .header.header2 .navbar-nav > li.open > a, .header.header2 .navbar-nav > li.open > a:hover, .header.header2 .navbar-nav > li.open > a:focus, .header.header2 .navbar-nav > li.active > a, .header.header2 .navbar-nav > li.active > a:hover, .header.header2 .navbar-nav > li.active > a:focus {
   color: #fff;
-  background: #673AB7;
+  background: #30047d;
 }
 
 @media (min-width: 768px) {
@@ -5824,8 +5840,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .header.header2 .navbar-toggle {
-  margin-top: 2.9rem;
-  margin-bottom: 2.9rem;
+  margin-bottom: 0.5rem;
   float: right;
   padding: 0.25rem 0.7rem;
 }
@@ -5858,7 +5873,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   background-color: transparent;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.5rem;
   right: 0;
   z-index: 999;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
@@ -5885,7 +5900,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 @media (min-width: 768px) {
   .header.header2.transparent.light .navbar-nav > li.open > a, .header.header2.transparent.light .navbar-nav > li.open > a:hover, .header.header2.transparent.light .navbar-nav > li.open > a:focus, .header.header2.transparent.light .navbar-nav > li.active > a, .header.header2.transparent.light .navbar-nav > li.active > a:hover, .header.header2.transparent.light .navbar-nav > li.active > a:focus {
     background: #fff;
-    color: #673AB7;
+    color: #30047d;
   }
 }
 
@@ -5932,7 +5947,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .header.header3 .header-inner .social-icons .social-icon:hover, .header.header3 .header-inner .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .header.header3 .header-inner .social-icons.pull-left .social-icon:first-child {
@@ -6329,7 +6344,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .side-menu li:hover > a:focus, .side-menu li:focus > a,
 .side-menu li:focus > a:hover,
 .side-menu li:focus > a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .side-menu li ul {
@@ -6395,7 +6410,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .header.dark .side-menu li:hover > a:focus, .header.dark .side-menu li:focus > a,
 .header.dark .side-menu li:focus > a:hover,
 .header.dark .side-menu li:focus > a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 /*Header Color Variants */
@@ -6411,7 +6426,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 /* Header Top - Custom*/
 .header-top.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   border-bottom: none;
 }
 
@@ -6481,7 +6496,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .header-top.dark .header-dropdown > a {
   color: #f1f1f1;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .header-top.dark .header-dropdown:nth-of-type(2n) > a {
@@ -6499,7 +6514,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .header-top.dark .top-menu li.active a, .header-top.dark .top-menu li:hover a, .header-top.dark .top-menu li:focus a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .header-top.dark .top-text {
@@ -6511,7 +6526,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .header-top.dark .top-links a:hover, .header-top.dark .top-links a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .header-top.dark .top-links a + a:before {
@@ -6524,12 +6539,12 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .header-top.dark .social-icons .social-icon:hover, .header-top.dark .social-icons .social-icon:focus {
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 /* Header Bottom - Custom */
 .header-bottom.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .header-bottom.custom .navbar-toggle {
@@ -6571,7 +6586,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
     color: #fff;
   }
   .header-bottom.dark .navbar-nav > li.open > a, .header-bottom.dark .navbar-nav > li.open > a:hover, .header-bottom.dark .navbar-nav > li.open > a:focus, .header-bottom.dark .navbar-nav > li.active > a, .header-bottom.dark .navbar-nav > li.active > a:hover, .header-bottom.dark .navbar-nav > li.active > a:focus {
-    color: #673AB7;
+    color: #30047d;
   }
 }
 
@@ -6652,7 +6667,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
     background-color: #1c1c1c;
   }
   .header2.sticky-header.fixed.transparent.custom {
-    background-color: #673AB7;
+    background-color: #30047d;
   }
   .header2.sticky-header.fixed.header-boxed {
     left: auto;
@@ -6960,7 +6975,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .info-boxes-container.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   border-color: #794ec7;
 }
 
@@ -7037,7 +7052,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .nav.nav-pills.style2 > li.active > a {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .nav.nav-pills.style2 > li:hover > a, .nav.nav-pills.style2 > li:focus > a {
@@ -7207,7 +7222,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 /* Homepages - Index Photography */
 .fotorama__thumb-border {
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 /* Fotorama Navigation Arrows */
@@ -7425,7 +7440,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .featured-entry.bg-custom2 a:hover, .featured-entry.bg-custom2 a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .featured-entry:hover figure a:after {
@@ -7499,7 +7514,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .fentry-slide .fentry-slide-content h2 a:hover, .fentry-slide .fentry-slide-content h2 a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .fentry-slide .fentry-slide-content .fentry-tags {
@@ -7519,7 +7534,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .fentry-slide .fentry-slide-content .fentry-tags a:hover, .fentry-slide .fentry-slide-content .fentry-tags a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 /* Homepages - Index Onepage */
@@ -7686,7 +7701,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #673AB7;
+  background-color: #30047d;
   opacity: 0;
   visibility: hidden;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
@@ -7745,7 +7760,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .member .member-title a:hover, .member .member-title a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .member .member-title small {
@@ -8206,7 +8221,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .entry .entry-title a:hover, .entry .entry-title a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .entry .entry-icon {
@@ -8225,7 +8240,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   height: 2.8rem;
   border-radius: 0.5em/.25em;
   color: #fff;
-  background: #673AB7;
+  background: #30047d;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
 
@@ -8344,11 +8359,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .entry .entry-meta div i {
   font-size: 90%;
   margin-right: 0.75rem;
-  color: #673AB7;
+  color: #30047d;
 }
 
 .entry .entry-meta a:hover, .entry .entry-meta a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .entry .entry-content-wrapper {
@@ -8377,7 +8392,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   font-size: 0.8rem;
   padding: 0.65rem 1.25rem;
   font-weight: 700;
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
   border-radius: 4px;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
@@ -8748,7 +8763,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .sidebar .widget a:hover, .sidebar .widget a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .sidebar .widget .widget-title {
@@ -8875,7 +8890,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .sidebar .widget .tagcloud a:hover, .sidebar .widget .tagcloud a:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -9182,7 +9197,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .single .entry-author a:hover, .single .entry-author a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .single .entry-author .author-content {
@@ -9210,7 +9225,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .single .entry-author .author-content .social-icon:hover, .single .entry-author .author-content .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .single .entry-author:after {
@@ -9375,11 +9390,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 #portfolio-filter li a:hover, #portfolio-filter li a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 #portfolio-filter li.active {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 #portfolio-filter li.active a {
@@ -9426,7 +9441,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .portfolio-item a:hover, .portfolio-item a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .portfolio-item figure {
@@ -9446,7 +9461,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #673AB7;
+  background-color: #30047d;
   opacity: 0;
   visibility: hidden;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
@@ -9472,7 +9487,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   -ms-transform: scale(0);
   transform: scale(0);
   z-index: 100;
-  color: #673AB7;
+  color: #30047d;
   background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -9510,7 +9525,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .portfolio-item .portfolio-tags a:hover, .portfolio-item .portfolio-tags a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .portfolio-item:hover figure:after {
@@ -9565,7 +9580,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   z-index: 99;
   padding: 4.5rem 1rem 1.15rem;
   margin: 0;
-  background: linear-gradient(to bottom, transparent 0%, #673AB7 100%);
+  background: linear-gradient(to bottom, transparent 0%, #30047d 100%);
   background-color: transparent;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
   -ms-transform: translateY(100%);
@@ -9720,7 +9735,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .lg-outer .lg-toogle-thumb:hover,
 .lg-outer .lg-toogle-thumb:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .lg-outer .lg-toogle-thumb {
@@ -9746,7 +9761,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .lg-actions .lg-prev:hover,
 .lg-actions .lg-prev:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .lg-outer .lg-thumb {
@@ -9758,7 +9773,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
-  border-color: #673AB7;
+  border-color: #30047d;
 }
 
 /* Single Portfolio */
@@ -9976,7 +9991,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .product .product-title a:hover, .product .product-title a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .product .product-price-container {
@@ -10069,8 +10084,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .product .product-action-container .btn:hover, .product .product-action-container .btn:focus {
   color: #fff;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .product:hover .product-action-container, .product.focus .product-action-container {
@@ -10096,7 +10111,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .product .label.new {
   left: 0.75rem;
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .product .label.discount {
@@ -10347,7 +10362,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .product-gallery a:hover, .product-gallery a:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .product-details {
@@ -10734,7 +10749,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   font-size: 10px;
   line-height: 21px;
   text-align: center;
-  color: #673AB7;
+  color: #30047d;
   background-color: #eaeaea;
   border-radius: 50%;
   position: absolute;
@@ -10807,7 +10822,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .filter-size-box.active, .filter-size-box:hover, .filter-size-box:focus {
   color: #fff !important;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .sidebar .filter-group-widget .panel-body {
@@ -10828,7 +10843,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .filter-brand-list a:hover, .filter-brand-list a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .filter-brand-list a i {
@@ -10933,7 +10948,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .noUi-connect {
-  background: #673AB7;
+  background: #30047d;
 }
 
 .noUi-origin {
@@ -10999,7 +11014,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 .delete-btn:hover, .delete-btn:focus,
 .cart-btn:hover,
 .cart-btn:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -11238,7 +11253,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   width: 2.2rem;
   height: 4rem;
   border-radius: 0.5em/.25em;
-  color: #673AB7;
+  color: #30047d;
   background: #d7d4d4;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
@@ -11277,7 +11292,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .location-icon.custom {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -11334,7 +11349,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .location-info.location-info-box .social-icons .social-icon:hover, .location-info.location-info-box .social-icons .social-icon:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 /* ----------- 16.404 Page --------------
@@ -11362,7 +11377,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   font-size: 8rem;
   margin-bottom: 3rem;
   line-height: 0.7;
-  color: #673AB7;
+  color: #30047d;
 }
 
 @media (min-width: 768px) {
@@ -11448,7 +11463,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   content: counter(count-faqs);
   font-size: 1.5rem;
   line-height: 1;
-  color: #673AB7;
+  color: #30047d;
   margin-right: 0.5rem;
   vertical-align: middle;
   top: -0.1rem;
@@ -11460,7 +11475,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .sidebar.faqs-sidebar .widget .faqs-cat-list li a:hover, .sidebar.faqs-sidebar .widget .faqs-cat-list li a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 /* ---------- 18.Login/Regsiter --------
@@ -11528,7 +11543,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   font-size: 1.2rem;
   line-height: 1.1;
   margin: 0.1rem 0 1.5rem;
-  color: #673AB7;
+  color: #30047d;
   letter-spacing: 0.025em;
 }
 
@@ -11642,7 +11657,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer .widget .social-icons .social-icon:hover, .footer .widget .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .footer .widget .tweet_list li {
@@ -11692,8 +11707,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer .widget .btn {
   color: #eee;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .footer .widget .btn:hover, .footer .widget .btn:focus {
@@ -11773,7 +11788,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .footer .widget .tagcloud a:hover, .footer .widget .tagcloud a:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -11958,7 +11973,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer-bottom .social-icons .social-icon:hover, .footer-bottom .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .footer-bottom .copyright {
@@ -11987,7 +12002,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .footer-bottom .footer-menu li.active a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .footer-bottom .footer-menu a {
@@ -12009,11 +12024,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .footer.white a:hover, .footer.white a:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .footer.white .widget .widget-title {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .footer.white .widget .about-list li {
@@ -12031,7 +12046,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer.white .widget .social-icons .social-icon:hover, .footer.white .widget .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .footer.white .widget .tweet_list li {
@@ -12048,8 +12063,8 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer.white .widget .btn {
   color: #f1f1f1;
-  background-color: #673AB7;
-  border-color: #673AB7;
+  background-color: #30047d;
+  border-color: #30047d;
 }
 
 .footer.white .widget .btn:hover, .footer.white .widget .btn:focus {
@@ -12093,7 +12108,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 }
 
 .footer.white .widget .tagcloud a:hover, .footer.white .widget .tagcloud a:focus {
-  background-color: #673AB7;
+  background-color: #30047d;
   color: #fff;
 }
 
@@ -12121,11 +12136,11 @@ Animations - add these clases to the parent element - Navbar Or dropdown
 
 .footer.white .footer-bottom .social-icons .social-icon:hover, .footer.white .footer-bottom .social-icons .social-icon:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .footer.white .footer-bottom .footer-menu li.active a {
-  color: #673AB7;
+  color: #30047d;
 }
 
 /* Scroll Top Button */
@@ -12146,7 +12161,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   transform: translateY(70px) scale(0);
   text-align: center;
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
   border-radius: 50%;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
 }
@@ -12291,7 +12306,7 @@ Animations - add these clases to the parent element - Navbar Or dropdown
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
   transition: all 0.65s cubic-bezier(0.92, 0.17, 0.29, 0.93) 0s;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -12412,7 +12427,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #673AB7;
+  background: #30047d;
 }
 
 .bg-custom .swiper-pagination-bullet-active {
@@ -12844,7 +12859,7 @@ button.swiper-pagination-bullet {
 .coming-soon .countdown-amount {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #673AB7;
+  color: #30047d;
   line-height: 1;
 }
 
@@ -13070,7 +13085,7 @@ button.swiper-pagination-bullet {
 
 .dark .close-sections-btn:hover, .dark .close-sections-btn:focus {
   color: #fff;
-  background-color: #673AB7;
+  background-color: #30047d;
 }
 
 .dark .soon-section {
@@ -13130,7 +13145,7 @@ button.swiper-pagination-bullet {
 }
 
 .dark .soon-section .contact-box .social-icons .social-icon:hover, .dark .soon-section .contact-box .social-icons .social-icon:focus {
-  color: #673AB7;
+  color: #30047d;
 }
 
 .dark .soon-section .contact-box a:hover,

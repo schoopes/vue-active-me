@@ -27,7 +27,7 @@
           <input type="submit" class="btn btn-success" value="Update Information">
         </div><br>
       </form>
-      <button type="button" class=" btn btn-danger" data-toggle="modal" data-target="#destroyModal">
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#destroyModal">
         Delete Account Permanently
       </button>
      <!--  Are You Sure Modal -->

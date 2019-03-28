@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <header class="header header2 straight-sm transparent light sticky-header animated-dropdown ttb-dropdown">
+    <header class="header header2 light sticky-header animated-dropdown ttb-dropdown">
         <div class="header-inner">
             <div class="container-fluid">
-<!--                 <a href="index.html" class="site-logo" title="Bold - Multipurpose Template">
-                    <img src="assets/images/logo-white.png" data-rjs="3" alt="Bold Logo">
-                    <span class="sr-only">Bold</span>
-                </a> -->
+                <router-link to="/">
+                   <a class="text-custom site-logo">Active<span id="logo-color">Me</span></a>
+                </router-link>
 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-container" aria-expanded="false">
                     <span class="toggle-text">Menu</span>
@@ -16,33 +15,30 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </span>
-                </button>
+                </button>¡
 
                 <div class="collapse navbar-collapse" id="main-nav-container">
                     <ul class="nav navbar-nav onepage-nav">
-                        <!-- <span v-if="isLoggedIn()"> -->
                             <li v-if="isLoggedIn()">
-                                <router-link to="/">Home</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/" class="toggle-text">Home</router-link>
                             </li>
                             <li v-if="isLoggedIn()">
-                                <router-link to="/logout">Logout</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/logout" class="toggle-text">Logout</router-link>
                             </li>
                             <li v-if="isLoggedIn()">
-                                <router-link to="/profile">Profile</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/profile" class="toggle-text">Profile</router-link>
                             </li>
                             <li v-if="isLoggedIn()">
-                                <router-link to="/calendar">Calendar</router-link>
-                            </li>
-                   <!--      </span>
-                        <span v-else> -->
-                            <li v-if="!isLoggedIn()">
-                                <router-link to="/">Home</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/calendar" class="toggle-text">Calendar</router-link>
                             </li>
                             <li v-if="!isLoggedIn()">
-                                <router-link to="/login">Login</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/" class="toggle-text">Home</router-link>
                             </li>
                             <li v-if="!isLoggedIn()">
-                                <router-link to="/signup">Sign Up</router-link>
+                                <router-link id="link" aria-expanded="false" role="button" to="/login" class="toggle-text">Login</router-link>
+                            </li>
+                            <li v-if="!isLoggedIn()">
+                                <router-link id="link" aria-expanded="false" role="button" to="/signup" class="toggle-text">Sign Up</router-link>
                             </li>
                        <!--  </span> -->
                     </ul>
@@ -50,13 +46,40 @@
             </div><!-- End .container-fluid -->
         </div><!-- End .header-inner -->
     </header><!-- End .header -->
-    <div class="container">
+
+
+    <div class="main">
       <router-view/>
     </div>
+
+
   </div>
 </template>
 
 <style>
+#logo-color {
+    color: #b3b3ff;
+}
+
+a.site-logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header.light {
+    opacity: 0.8;
+}
+.currentLink {
+    color: #b3b3ff;
+}
+#link {
+    background-color: #30047d;
+    color: #fff;
+}
+#link:hover {
+    background-color: #fff;
+    color: #30047d;
+}
 </style>
 
 <script>

@@ -2,9 +2,9 @@
   <div class="calendar">
     <div v-if="$root.googleEvents" id="calendar">
     </div>
-    <div v-else id="button">
-      <h3>To View Your Personal Calendar, Click the Button Below:</h3>
-      <button v-on:click="googleAuth()">
+    <div v-else id="body" class="container">
+      <h3 class="bordered-text">To View Your Personal Calendar, Click the Button Below:</h3>
+      <button id="button" v-on:click="googleAuth()">
         Sign in With Google
       </button>
     </div>
@@ -14,9 +14,14 @@
 <style scoped>
 #calendar {
   width: 100%;
+  background-color: #30047d;
+  opacity: 0.8;
 }
-#button {
+#body {
   margin-top: 150px;
+}
+.bordered-text {
+  max-width: 100%;
 }
 </style>
 
@@ -43,11 +48,16 @@ export default {
       var calendarEl = document.getElementById("calendar");
 
       this.favorites.forEach(function(favorite) {
-        this.calendarEvents.push({ title: favorite.event, start: favorite.start, color: "red", textColor: "black" });
+        this.calendarEvents.push({ title: favorite.event, start: favorite.start, color: "purple", textColor: "white" });
       }, this);
 
       this.eventItem.forEach(function(event) {
-        this.calendarEvents.push({ title: event.summary, start: event.start.dateTime });
+        this.calendarEvents.push({
+          title: event.summary,
+          start: event.start.dateTime,
+          color: "black",
+          textColor: "white"
+        });
       }, this);
 
       var calendar = new Calendar(calendarEl, {

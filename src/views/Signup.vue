@@ -1,8 +1,8 @@
 <template>
   <div class="signup">
-    <div class="container">
+    <div id="body" class="container">
       <form v-on:submit.prevent="submit(); sendgrid()" id="signup-form">
-        <h1>Signup</h1>
+        <h1 class="bordered-text">Signup</h1>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
@@ -20,22 +20,29 @@
         </div><br>
         <div class="form-group">
           <input type="password" class="form-control" placeholder="Password" v-model="password">
-          <span v-if="password.length > 0 && password.length < 8 || password.length > 20 " class="form-control">Password must be between 8 and 20 characters</span>
+          <span v-if="password.length > 0 && password.length < 8 || password.length > 20 " class="text-danger">Password must be between 8 and 20 characters</span>
         </div><br>
         <div class="form-group">
           <input type="password" class="form-control" v-model="passwordConfirmation" placeholder="Confirm Password">
           <span v-if="passwordConfirmation.length > 0 && passwordConfirmation !== password" class="text-danger">Must match password</span>
         </div><br>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="submit" class="btn" value="Submit">
       </form>
     </div>
   </div>
 </template>
 
 <style>
-/*remove once theme is installed*/
-.form-control {
-  width: 50%;
+#body {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.btn {
+  background-color: #30047d;
+  color: #fff;
+}
+.text-danger {
+  font-weight: bold;
 }
 </style>
 

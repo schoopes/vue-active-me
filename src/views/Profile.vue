@@ -1,33 +1,35 @@
 <template>
   <div class="profile">
     <div class="container">
-      <h1 class="title dark">{{ user.first_name }}'s <span class="light text-custom">Profile </span><i class="fa fa-diamond"></i></h1>
-      <div class="table-row">
+      <h1 id="title" class="bordered-text"><i class="fa fa-hand-peace-o"></i> {{ user.first_name }}'s Profile <i class="fa fa-hand-peace-o"></i></h1>
+      <div class="table-row bordered-text">
         <div class="mb10"></div>
         <div class="row">
-          <div class="col-sm-6">
-            <p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
-            <p>Email: {{ user.email }}</p>
-            <p>City: {{ user.location }}</p>
-            <router-link to="/edit">Edit User Information</router-link><br>
-            <router-link to="/calendar">View Calendar</router-link>
+          <div class="col">
+            <h5>Full Name: {{ user.first_name }} {{ user.last_name }}</h5>
+            <h5>Email: {{ user.email }}</h5>
+            <h5>City: {{ user.location }}</h5>
+            <router-link to="/edit">Edit User Information</router-link>
+            <br><router-link to="/calendar">View Calendar</router-link>
             <br>
           </div>
         </div>
       </div>
-      <br><h2>My Events</h2>
+      <br><h2 id="events">My Events</h2>
       <transition-group name="fade">
         <div v-if="showFavorite" v-for="favorite in favorites" v-bind:key="favorite.id" >
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Event: {{ favorite.event }}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">City: {{ favorite.city }}</h6>
-              <p class="card-text">Venue: {{ favorite.venue }}</p>
-              <p class="card-text">When: {{ calendarTime(favorite.start) }}</p>
-              <button v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button><br>
-     <!--          <br><p class="card-subtitle mb-2 text-muted">{{ getAttendees(favorite.id) }} other person(s) have favorited this event.</p> -->
+          <div class="row">
+            <div class="col">
+                <div class="service service-box service-border">
+                      <br>
+                      <h4>Event: {{ favorite.event }}</h4>
+                      <p>City: {{ favorite.city }}}</p>
+                      <p>Venue: {{ favorite.venue }}</p>
+                      <p>When: {{ calendarTime(favorite.start) }}</p>
+                      <button id="button" class="service-title" v-on:click="destroyFavorite(favorite.id);showFavorite = !showFavorite">Remove From Favorites</button>
+                </div><!-- End .service -->
             </div>
-          </div><br>
+          </div>
         </div>
       </transition-group>
     </div>
@@ -42,6 +44,23 @@
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+#title {
+  margin-top: 120px;
+}
+#button {
+  color: #30047d;
+}
+#events {
+  color: #30047d;
+  text-align: center;
+}
+.fa {
+  color: #b3b3ff;
+}
+.service.service-box.service-border {
+  border-color: #b3b3ff;
+  border-width: 5px;
 }
 </style>
 

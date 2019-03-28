@@ -1,8 +1,8 @@
 <template>
   <div class="login">
-    <div class="container">
+    <div id="body" class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>Login</h1>
+        <h1 class="bordered-text">Login</h1>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
@@ -12,15 +12,23 @@
         <div class="form-group">
           <input type="password" class="form-control" v-model="password" placeholder="Password">
         </div><br>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="submit" class="btn" value="Submit">
       </form>
     </div>
   </div>
 </template>
 
 <style>
-.form-group {
+#body {
   margin-top: 100px;
+}
+.form-control {
+  border-color: #b3b3ff;
+  border-width: 3px;
+}
+.btn {
+  background-color: #30047d;
+  color: #fff;
 }
 </style>
 
